@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical"
+    android:background="@drawable/cvr8">
+
+
+   <!--bannner nav-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#E1FFAA00"
+        android:layout_marginBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/backArrow2"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="মোট সম্পত্তির উপর যাকাতের পরিমাণ :"
+            android:textColor="#FFFF"
+            android:textSize="21sp"
+            android:layout_toRightOf="@id/backArrow2"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+    <!--end-->
+
+
+    <!--main body-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+            <!--gold and silver present  dam er preview box -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:background="@drawable/cstm_fild"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                >
+                <!--gold-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="স্বর্ণের বর্তমান বাজার দর :"
+                        android:textSize="18sp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+
+                   />
+
+                    <TextView
+                        android:id="@+id/givenGoldPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#D50000"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <!--silver-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="রুপার বর্তমান বাজার দর :"
+                        android:textSize="18sp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/givenSilverPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#D50000"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+  <!--end-->
+
+            <!--box for all gold/silver price priview-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:background="@drawable/cstm_fild"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                >
+                <!--gold-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <TextView
+                        android:id="@+id/myGold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/myGoldValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#D50000"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <!--silver-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/mySilver"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_weight="2"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/mySilverValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#D50000"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--end-->
+
+    <!--other information-->
+
+
+          <!--information1-->
+            
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="3"
+
+
+         >
+         
+         
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:text="গুছিতো নগদ টাকার পরিমান :"
+             android:textSize="20sp"
+             android:layout_marginLeft="17sp"
+             android:layout_marginTop="10dp"
+             />
+
+         <TextView
+             android:id="@+id/tvNogodTaka"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textSize="20sp"
+             android:layout_marginRight="17sp"
+             android:layout_marginTop="10dp"
+             android:textColor="#D50000"
+             />
+
+
+     </LinearLayout>
+            <!--end-->
+
+
+
+  <!--information2-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="বিয়ে-শাদী, হজ, বাড়ি নির্মাণের জন্য জমানো টাকা :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvBiyeTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+            <!--end-->
+
+            <!--information3-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ব্যাংক, বীমা এবং প্রাইজ বন্ডে জমানো টাকা :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvBankTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+
+     <!--end-->
+
+
+            <!--infromaion4-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="অন্যের কাছে রাখা টাকা যা পাওয়া সম্ভব না আছে :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRakaTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+           <!--end-->
+
+            <!--information5-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="চতুষ্পদ জন্তু বা গবাদি পশু : (ভেড়া, ছাগল, গরু, ঘোড়া ইত্যাদি )চতুষ্পদ জন্তু বা গবাদি পশু : (ভেড়া, ছাগল, গরু, ঘোড়া ইত্যাদি )"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPetTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+
+       <!--end-->
+
+            <!--information 6-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="বাড়ি বা দোকান ইত্যাদি থেকে টাকা আয় :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvVaraTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+     <!--end-->
+
+            <!--informarion 7-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="জমি, দোকানের মালামাল বা ইত্যাদি জিনিস যা বিক্রির জন্য কেনা :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDokanTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+
+      <!--end-->
+            <!--information8-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="অংশীদারিত্বের চুক্তিতে যে বুঝি বিনিয়োগ করা হয় তার মূল পুঁজি এবং হালাল মুনাফার টাকা :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvOwnerTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+            <!--end-->
+
+            <!--information9-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="20dp"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="কোম্পানির শেয়ার মূল্য (টাকায়) :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvShareTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+
+     <!--end-->
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#D50000"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <!--information box 10-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="20dp"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="সকল ধরনের ঋণের পরিমাণ (টাকায়) : "
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRinTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+            <!--end-->
+
+            <!--informarion box 11-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="20dp"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="কর্মচারীর বেতন :(ব্যবসায়ী প্রতিষ্ঠান অথবা বাড়ি ঘরের) "
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvBetonTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+
+   <!--end-->
+            <!--information Box12-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="20dp"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="সকল প্রকার ভাড়া /বিল : (যেমন বাড়ি,দোকান,ইন্টারনেট, পানি, গ্যাস, বিদ্যুৎ) "
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvBilTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+  <!--end-->
+            <!--information box 13-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="20dp"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="বিগত বছরের অনাদায়ই যাকাতের পরিমাণ : "
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvOnadyiTaka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D50000"
+                    />
+
+
+            </LinearLayout>
+
+
+<!--end-->
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#D50000"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginBottom="3dp"
+
+                />
+            <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#D50000"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <!--total sompotti-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="আপনার মোট সম্পত্তির পরিমাণ :"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="17dp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/tvTotalProperty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_marginRight="17dp"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="মোট সম্পত্তির উপর যাকাতের পরিমাণ :"
+                 android:textSize="20sp"
+                  android:gravity="center"
+                   android:textColor="#D50000"
+                   android:layout_marginBottom="20dp"
+                />
+
+  <!--result-->
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+               android:orientation="vertical"
+              android:background="@drawable/cstm_result"
+              android:layout_marginHorizontal="30dp"
+              android:layout_marginBottom="30dp"
+              android:gravity="center"
+              >
+
+              <TextView
+                  android:id="@+id/tvResult"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+
+                  android:textColor="#C51162"
+                  android:layout_marginLeft="17dp"
+                  android:layout_marginRight="17dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="9dp"
+                  />
+
+
+
+
+
+          </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
